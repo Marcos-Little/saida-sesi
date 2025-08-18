@@ -39,15 +39,14 @@
     transition:  0.2s ease-in-out;
 }
 .formulario button:hover{
-    background-color: #3570E4;
+    background-color: #C7D5E9;
     transform: scale(1.02);
 }
 .rodape{
     display: flex;
     justify-content: center;
-    height: 5%;
+
     text-align: center;
-    background-color: #C7D5E9;
 }
 .rodape h3{
     font-size: 14px;
