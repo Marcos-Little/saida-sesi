@@ -78,8 +78,8 @@
     position: absolute;
     top: 5.8vh;
     left: 0;
-    width: 36vw;
-    height: 93vh;
+    width: 50%;
+    height: 100vh;
     background-color: #1d2f6f;
     list-style-type: none;
     display: flex;
@@ -92,19 +92,20 @@
   }
   .nav-list .escrita{
     width: 90%;
-    height: 7em;
+    height: 9em;
     margin-left: 10%;
-    margin-top: 5em;
+    margin-top: 1em;
   }
   .nav-list a{
-    margin-top: 1em;
-    margin-bottom: -2em;
+    margin-top: 0.5em;
+    margin-bottom: -1em;
     background-color: #3570E4;
     padding-left: 3em;
     padding-right: 3em;
     border-radius: 20px;
   }
   .nav-list .saida{
+    margin-top: -1em;
     background-color: #f1f1f1;
     color: #3570E4;
   }
