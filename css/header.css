@@ -75,7 +75,6 @@
     flex-direction: row-reverse;
   }
   .nav-list{
-    position: absolute;
     top: 5.8vh;
     left: 0;
     width: 50%;
@@ -119,4 +118,5 @@
   .nav-list.active {
     transform: translateX(0);
   }
+
 }
