@@ -1,0 +1,121 @@
+/*Estilo barra de navegação*/
+#logo{
+  height: 80px;
+  padding: 10px;
+}
+#logotipo{
+  height: 70px;
+  display: none;
+}
+.navbar {
+  width: 100%;
+  background-color: #1d2f6f;
+  color: #fefefe;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  height: 55px;
+  position: fixed;
+  z-index: 999;
+  flex-direction: row;
+}
+
+.nav-list {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.nav-list img {
+  align-self: center;
+  height: 16px;
+}
+.nav-list li {
+  position: relative;
+}
+
+
+/*Navbar para celulares*/
+.mobile-menu {
+  display: none;
+}
+.mobile-menu:hover {
+  cursor: pointer;
+}
+.mobile-menu .line {
+  width: 32px;
+  height: 2.3px;
+  background-color: #fefefe;
+  margin: 8px;
+  border-radius: 10px;
+}
+@media (max-width: 850px) {
+  #logo{
+    align-items: center;
+    justify-content: center;
+    margin-right: 20%;
+  } 
+  #logotipo{
+    display: block;
+  }
+  .navbar{
+    text-align: center;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .nav-list{
+    position: absolute;
+    top: 5.8vh;
+    left: 0;
+    width: 36vw;
+    height: 93vh;
+    background-color: #1d2f6f;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in;
+    z-index: 999;
+  }
+  .nav-list .escrita{
+    width: 90%;
+    height: 7em;
+    margin-left: 10%;
+    margin-top: 5em;
+  }
+  .nav-list a{
+    margin-top: 1em;
+    margin-bottom: -2em;
+    background-color: #3570E4;
+    padding-left: 3em;
+    padding-right: 3em;
+    border-radius: 20px;
+  }
+  .nav-list .saida{
+    background-color: #f1f1f1;
+    color: #3570E4;
+  }
+  .nav-list .saida:hover{
+    background-color: #3570E4;
+    color: #f1f1f1;
+  }
+  .mobile-menu {
+    display: block;
+  }
+  .nav-list.active {
+    transform: translateX(0);
+  }
+}
